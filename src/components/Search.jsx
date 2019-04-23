@@ -1,3 +1,5 @@
+import YOUTUBE_API_KEY from "../config/youtube.js";
+
 var Search = () => (
   <div className="search-bar form-inline">
     <input className="form-control" type="text" />
