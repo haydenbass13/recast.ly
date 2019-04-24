@@ -1,9 +1,9 @@
-import YOUTUBE_API_KEY from "../config/youtube.js";
 
-var Search = () => (
+
+var Search = (props) => (
   <div className="search-bar form-inline">
-    <input className="form-control" type="text" />
-    <button className="btn hidden-sm-down">
+    <input className="form-control" type="text" onChange={(e) => props.search(e.target.value)}/>
+    <button className="btn hidden-sm-down" >
       <span className="glyphicon glyphicon-search"></span>
     </button>
   </div> 
